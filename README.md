@@ -1,2 +1,2 @@
 # Fylo-Landing-Page
-A Challenge by www.frontendmentor.io
+A Challenge from www.frontendmentor.io
