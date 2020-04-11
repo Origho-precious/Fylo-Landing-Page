@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  padding: 2rem 0 0; }
+  body .container {
+    max-width: 90%;
+    margin: auto; }
+    body .container #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      margin-bottom: 3rem; }
+      body .container #navbar ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body .container #navbar ul li {
+          font-weight: 700;
+          padding-right: 1.5rem; }
+          body .container #navbar ul li a {
+            color: #000;
+            transition: all 1s ease-in-out; }
+            body .container #navbar ul li a:hover {
+              color: #3065f8;
+              font-size: 1.05rem; }
+    body .container header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      align-items: center; }
+      body .container header .showcase-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem; }
+      body .container header .showcase-text p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem; }
+      body .container header .showcase-text input {
+        display: inline-block;
+        height: 50px;
+        border: 2px solid #9e9e9e;
+        border-radius: 5px;
+        outline: none; }
+        body .container header .showcase-text input[type="search"] {
+          width: 300px;
+          margin-right: 10px;
+          padding-left: 2rem;
+          padding-right: 1rem; }
+        body .container header .showcase-text input[type="submit"] {
+          color: #fff;
+          width: 180px;
+          background-color: #3065f8;
+          border: none;
+          transition: all 1s; }
+          body .container header .showcase-text input[type="submit"]:hover {
+            font-size: 1rem; }
+      body .container header .showcase-img img {
+        max-width: 100%; }
+  body #branding {
+    background: url("../images/bg-curve-desktop.svg") no-repeat center center/cover;
+    margin: 8rem 0 0; }
+    body #branding .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10rem 0; }
+      body #branding .container .branding-text {
+        flex-basis: 55%; }
+        body #branding .container .branding-text h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1.2rem; }
+        body #branding .container .branding-text p {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          margin-right: 5rem; }
+        body #branding .container .branding-text a {
+          color: #3c9f8f;
+          font-weight: 700;
+          transition: all 2s; }
+          body #branding .container .branding-text a:hover {
+            color: cyan; }
+        body #branding .container .branding-text img {
+          display: inline-block;
+          position: relative;
+          bottom: -4px;
+          left: 0; }
+        body #branding .container .branding-text .bottom-line {
+          height: 2px;
+          background-color: #3c9f8f;
+          margin-bottom: 3rem;
+          width: 26%; }
+        body #branding .container .branding-text .testimonial {
+          background: #fff;
+          max-width: 65%;
+          padding: 1.3rem 2rem 3rem; }
+          body #branding .container .branding-text .testimonial p {
+            margin-right: 0; }
+          body #branding .container .branding-text .testimonial .testimonial-author {
+            display: flex;
+            align-items: center; }
+            body #branding .container .branding-text .testimonial .testimonial-author .test-img {
+              margin-right: 10px; }
+              body #branding .container .branding-text .testimonial .testimonial-author .test-img img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%; }
+            body #branding .container .branding-text .testimonial .testimonial-author p {
+              font-weight: 700;
+              margin-bottom: 0; }
+      body #branding .container .branding-img {
+        flex-basis: 42%; }
+        body #branding .container .branding-img img {
+          max-width: 100%; }
+  body #cta {
+    background: #585989;
+    color: #fff; }
+    body #cta .container {
+      display: grid;
+      grid-template-columns: 50% 40%;
+      grid-gap: 8rem;
+      align-items: center;
+      padding: 6rem 0; }
+      body #cta .container .cta-text h4 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; }
+      body #cta .container .cta-text p {
+        font-size: 1.1rem;
+        line-height: 2;
+        margin-right: 5rem; }
+      body #cta .container .cta-form input {
+        display: block;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        outline: none; }
+        body #cta .container .cta-form input[type="search"] {
+          width: 90%;
+          margin-right: 10px;
+          padding-left: 2rem;
+          padding-right: 1rem;
+          margin-bottom: 10px; }
+        body #cta .container .cta-form input[type="submit"] {
+          color: #fff;
+          width: 180px;
+          background-color: #3065f8;
+          border: none;
+          transition: all 1s; }
+          body #cta .container .cta-form input[type="submit"]:hover {
+            font-size: 1rem; }
+  body footer {
+    background-color: #070439;
+    color: #fff;
+    padding: 6rem 0 4rem; }
+    body footer .container {
+      display: grid;
+      grid-template-areas: "logo logo logo logo" "info ul-1 ul-2 socials";
+      grid-gap: 2rem; }
+      body footer .container .footer-logo {
+        grid-area: logo; }
+      body footer .container .info {
+        grid-area: info; }
+        body footer .container .info div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem; }
+          body footer .container .info div img {
+            display: inline-block;
+            padding-right: 0.8rem; }
+      body footer .container ul li {
+        font-size: 1rem;
+        margin-bottom: 1rem; }
+        body footer .container ul li a {
+          color: #fff;
+          transition: all 1s; }
+          body footer .container ul li a:hover {
+            color: #3c9f8f; }
+      body footer .container:nth-child(3) {
+        grid-area: ul-1; }
+      body footer .container:nth-child(4) {
+        grid-area: ul-2; }
+      body footer .container .socials {
+        grid-area: socials; }
+        body footer .container .socials a {
+          display: inline-block;
+          color: #fff;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          margin-left: 5px;
+          padding: 0.65rem 0.9rem;
+          transition: all 1s; }
+          body footer .container .socials a:hover {
+            color: #3c9f8f; }
+    body footer .attribution {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 5rem; }
+      body footer .attribution a {
+        color: #3c9f8f; }
+        body footer .attribution a:hover {
+          font-size: 14px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem 0 0; }
+    body .container header {
+      display: flex;
+      flex-direction: column-reverse; }
+      body .container header .showcase-text {
+        text-align: center; }
+        body .container header .showcase-text h1 {
+          font-size: 2rem;
+          margin-top: 3rem; }
+        body .container header .showcase-text p {
+          margin-bottom: 2rem; }
+      body .container header .showcase-img img {
+        max-width: 100%; }
+    body #branding {
+      background: url("../images/bg-curve-mobile.svg") no-repeat center center/cover;
+      margin: 8rem 0 0; }
+      body #branding .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 8rem 0; }
+        body #branding .container .branding-text {
+          margin-top: 5rem; }
+          body #branding .container .branding-text h1 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            text-align: center; }
+          body #branding .container .branding-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            margin-right: 0; }
+          body #branding .container .branding-text .link {
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 2rem; }
+            body #branding .container .branding-text .link a {
+              color: #3c9f8f;
+              font-weight: 700;
+              transition: all 2s; }
+              body #branding .container .branding-text .link a:hover {
+                color: cyan; }
+          body #branding .container .branding-text .bottom-line {
+            margin: auto;
+            margin-bottom: 3rem; }
+          body #branding .container .branding-text .testimonial {
+            max-width: 80%;
+            margin: auto; }
+    body #cta .container {
+      display: block;
+      text-align: center;
+      padding: 6rem 0; }
+      body #cta .container .cta-text h4 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem; }
+      body #cta .container .cta-text p {
+        font-size: initial;
+        line-height: 1.8;
+        margin-right: 0;
+        margin-bottom: 1.5rem; }
+      body #cta .container .cta-form input[type="search"] {
+        width: 80%;
+        margin: auto;
+        text-align: center; }
+      body #cta .container .cta-form input[type="submit"] {
+        width: 80%;
+        margin: 1rem auto 0; }
+    body footer {
+      padding: 6rem 0 4rem; }
+      body footer .container {
+        display: block; }
+        body footer .container .footer-logo {
+          margin-bottom: 2rem; }
+        body footer .container .info {
+          margin-bottom: 3rem; }
+        body footer .container ul {
+          margin-bottom: 3rem; }
+        body footer .container .socials {
+          text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  body .container #navbar {
+    display: flex;
+    flex-direction: column; }
+    body .container #navbar img {
+      width: 100%; }
+    body .container #navbar ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem; }
+      body .container #navbar ul li {
+        font-weight: 700;
+        padding-right: 1rem; }
+        body .container #navbar ul li a {
+          color: #000;
+          transition: all 1s ease-in-out; }
+          body .container #navbar ul li a:hover {
+            color: #3065f8;
+            font-size: 1.05rem; }
+  body .container header {
+    display: flex;
+    flex-direction: column-reverse; }
+    body .container header .showcase-text {
+      text-align: center; }
+      body .container header .showcase-text h1 {
+        font-size: 2rem;
+        margin-top: 3rem; }
+      body .container header .showcase-text p {
+        margin-bottom: 2rem; }
+      body .container header .showcase-text input {
+        display: block; }
+        body .container header .showcase-text input[type="search"] {
+          width: 80%;
+          margin: auto;
+          text-align: center; }
+        body .container header .showcase-text input[type="submit"] {
+          width: 80%;
+          margin: 1rem auto 0; }
+    body .container header .showcase-img img {
+      max-width: 100%; }
+  body #branding {
+    margin: 5rem 0 0; }
+    body #branding .container {
+      padding: 5rem 0;
+      text-align: center; }
+      body #branding .container .branding-text .bottom-line {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3rem; }
+      body #branding .container .branding-text .testimonial {
+        max-width: 100%;
+        margin: auto;
+        text-align: left; }
+  body footer {
+    padding: 5rem 0 3rem; }
+    body footer .container {
+      display: block; }
+      body footer .container .footer-logo {
+        margin-bottom: 2rem; }
+      body footer .container .info {
+        margin-bottom: 3rem; }
+      body footer .container ul {
+        margin-bottom: 3rem; }
+      body footer .container .socials {
+        text-align: center; } }
